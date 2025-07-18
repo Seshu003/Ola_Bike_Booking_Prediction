@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola Bike Demand Forecasting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pn.css') }}">
+    <!-- Poppins Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Inter as backup -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-motorcycle"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Ola</span>
+                    <span class="logo-sub">Demand AI</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#predict" class="nav-link">Predict</a></li>
+                <li><a href="#insights" class="nav-link">Insights</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-brain"></i>
+                    <span>AI-Powered Analytics</span>
+                </div>
+                <h1 class="hero-title">
+                    Smart Mobility
+                    <span class="gradient-text">Forecasting</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Revolutionize your ride-sharing operations with advanced machine learning algorithms that predict demand patterns with unprecedented accuracy.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Accuracy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Real-time</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100K+</div>
+                        <div class="stat-label">Predictions</div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToSection('predict')">
+                        <i class="fas fa-rocket"></i>
+                        Start Predicting
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('about')">
+                        <i class="fas fa-play"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-title">Live Dashboard</div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="chart-container">
+                            <div class="chart-bars">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar active" style="height: 85%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 55%"></div>
+                                <div class="bar" style="height: 75%"></div>
+                            </div>
+                            <div class="chart-labels">
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+                            </div>
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <div class="metric-value">1,247</div>
+                                <div class="metric-label">Current Demand</div>
+                                <div class="metric-trend up">+12%</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">89%</div>
+                                <div class="metric-label">Accuracy</div>
+                                <div class="metric-trend up">+2%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>About Project</span>
+                </div>
+                <h2 class="section-title">Intelligent Demand Forecasting</h2>
+                <p class="section-subtitle">
+                    Leveraging cutting-edge machine learning to transform how ride-sharing platforms predict and manage demand patterns.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3 class="about-heading">Advanced Analytics for Modern Mobility</h3>
+                    <p class="about-description">
+                        Our sophisticated machine learning model analyzes multiple data streams to provide accurate demand predictions, enabling Ola to optimize resource allocation and enhance customer experience.
+                    </p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Real-time Analysis</h4>
+                                <p>Continuous monitoring of demand patterns and environmental factors</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Weather Integration</h4>
+                                <p>Advanced weather data processing for accurate seasonal predictions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Predictive Modeling</h4>
+                                <p>Random Forest algorithms with 95%+ accuracy rates</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Automated Optimization</h4>
+                                <p>Smart resource allocation based on predicted demand</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="process-flow">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>Data Collection</h4>
+                                <p>Gather weather, time, and historical data</p>
+                            </div>
+                        </div>
+                        <div class="process-connector"></div>
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>ML Processing</h4>
+                                <p>Random Forest analysis and pattern recognition</p>
+                            </div>
+                        </div>
+                        <div class="process-connector"></div>
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>Prediction</h4>
+                                <p>Generate accurate demand forecasts</p>
+                            </div>
+                        </div>
+                        <div class="process-connector"></div>
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>Optimization</h4>
+                                <p>Resource allocation and fleet management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Prediction Section -->
+    <section id="predict" class="predict">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-magic"></i>
+                    <span>AI Prediction</span>
+                </div>
+                <h2 class="section-title">Demand Forecasting Tool</h2>
+                <p class="section-subtitle">
+                    Enter environmental and temporal conditions to get instant demand predictions
+                </p>
+            </div>
+            
+            <div class="prediction-workspace">
+                <div class="prediction-form">
+                    <div class="form-header">
+                        <h3>Input Parameters</h3>
+                        <p>Configure the conditions for prediction</p>
+                    </div>
+                    
+                    <form id="predictionForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="seasons">Season</label>
+                                <div class="select-wrapper">
+                                    <select id="seasons" name="seasons" required>
+                                        <option value="">Select Season</option>
+                                        <option value="summer">🌞 Summer</option>
+                                        <option value="spring">🌸 Spring</option>
+                                        <option value="winter">❄️ Winter</option>
+                                        <option value="rainy">🌧️ Rainy</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="day">Day Type</label>
+                                <div class="select-wrapper">
+                                    <select id="day" name="day" required>
+                                        <option value="">Select Day Type</option>
+                                        <option value="holiday">🎉 Holiday</option>
+                                        <option value="work">💼 Working Day</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="temp">Temperature (°C)</label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="temp" name="temp" min="-10" max="50" required>
+                                    <span class="input-unit">°C</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="a_temp">Atmospheric Temperature (°C)</label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="a_temp" name="a_temp" min="-10" max="50" required>
+                                    <span class="input-unit">°C</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="humidity">Humidity (%)</label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="humidity" name="humidity" min="0" max="100" required>
+                                    <span class="input-unit">%</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="wind">Wind Speed (km/h)</label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="wind" name="wind" min="0" max="100" step="0.1" required>
+                                    <span class="input-unit">km/h</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="predict-btn">
+                            <i class="fas fa-brain"></i>
+                            <span>Generate Prediction</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="prediction-result">
+                    <div class="result-header">
+                        <h3>Prediction Results</h3>
+                        <p>AI-generated demand forecast</p>
+                    </div>
+                    
+                    <div class="result-card" id="resultCard">
+                        <div class="result-visual">
+                            <div class="result-circle">
+                                <div class="result-number" id="predictionNumber">-</div>
+                                <div class="result-label">Bookings</div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Demand Level</span>
+                                <div class="demand-indicator" id="demandIndicator">
+                                    <div class="indicator-bar"></div>
+                                    <span class="indicator-text">Awaiting prediction</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <span class="detail-label">Confidence</span>
+                                <div class="confidence-score">
+                                    <div class="confidence-bar">
+                                        <div class="confidence-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span class="confidence-text">95%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <span class="detail-label">Recommendation</span>
+                                <div class="recommendation" id="recommendation">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Enter parameters to get recommendations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3>Processing Your Prediction</h3>
+            <p>Our AI is analyzing the data...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <div class="toast-text">
+                <div class="toast-title"></div>
+                <div class="toast-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
