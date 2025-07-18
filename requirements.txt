@@ -2,13 +2,13 @@
 Flask==2.3.3
 Werkzeug==2.3.7
 
-# Machine Learning
-scikit-learn==1.3.0
-joblib==1.3.2
+# Machine Learning - Updated versions for Python 3.13 compatibility
+scikit-learn==1.5.1
+joblib==1.4.2
 
 # Data Processing
-pandas==2.0.3
-numpy==1.24.3
+pandas==2.1.4
+numpy==1.24.4
 
 # HTTP and JSON handling
 requests==2.31.0
