@@ -57,10 +57,10 @@ An AI-powered forecasting system that analyzes multiple data points including we
 
 
 ### Screenshots
-![Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
+![Dashboard](o1.png)
 *Modern dashboard with prediction interface*
 
-![Prediction](https://via.placeholder.com/800x400?text=Prediction+Results)
+![Prediction](o5.png)
 *Real-time prediction results with recommendations*
 
 ## 🛠️ Technology Stack
